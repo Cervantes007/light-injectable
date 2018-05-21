@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib/",
+    "declarationDir": "./lib/types/",
+    "module": "commonjs",
+    "target": "es2015",
+    "sourceMap": true,
+    "declaration": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
