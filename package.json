@@ -9,6 +9,7 @@
     "build": "rm -rf ./lib && tsc"
   },
   "devDependencies": {
+    "light-injectable": "^1.0.0",
     "typescript": "^2.8.3"
   },
   "dependencies": {
