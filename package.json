@@ -1,6 +1,6 @@
 {
   "name": "light-injectable",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
   "repository": "git@github.com:Cervantes007/boost-belt.git",
@@ -9,7 +9,6 @@
     "build": "rm -rf ./lib && tsc"
   },
   "devDependencies": {
-    "light-injectable": "^1.0.0",
     "typescript": "^2.8.3"
   },
   "dependencies": {

@@ -4,6 +4,10 @@ const metadataKeys = {
   injectable: 'custom:injectable'
 };
 
+export function injectableInstance(instance) {
+	Reflect.defineMetadata(metadataKeys.injectable, instance, instance.constructor);
+}
+
 export function inject() {
   return (target: any, property?: string) => {
     if (property) {
@@ -39,4 +43,5 @@ function spellbook(target) {
     });
     return target.bind(null, ...newArgs);
   }
+	return Reflect.getMetadata(metadataKeys.injectable, target);
 }
